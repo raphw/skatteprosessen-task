@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>codes.rafael.task</groupId>
   <artifactId>task</artifactId>
-  <version>1.8-SNAPSHOT</version>
+  <version>1.8</version>
   <packaging>pom</packaging>
   <name>Generic task processing for Java</name>
   <description>This library implements a minimal framework for handling an ordered queue of tasks that is both suitable for stream and batch processing.</description>
@@ -19,6 +19,7 @@
     <connection>scm:git:git://github.com/raphw/skatteprosessen-task.git</connection>
     <developerConnection>scm:git:git@github.com:raphw/skatteprosessen-task.git</developerConnection>
     <url>http://github.com/raphw/skatteprosessen-task/tree/master</url>
+    <tag>task-1.8</tag>
   </scm>
   <developers>
     <developer>
