@@ -8,13 +8,6 @@
     <name>Generic task processing for Java</name>
     <description>This library implements a minimal framework for handling an ordered queue of tasks that is both suitable for stream and batch processing.</description>
     <url>https://github.com/raphw/skatteprosessen-task</url>
-    <distributionManagement>
-        <repository>
-            <id>central</id>
-            <name>Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
-    </distributionManagement>
     <scm>
         <connection>scm:git:git://github.com/raphw/skatteprosessen-task.git</connection>
         <developerConnection>scm:git:git@github.com:raphw/skatteprosessen-task.git</developerConnection>
@@ -120,6 +113,16 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.7.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <autoPublish>true</autoPublish>
+                    <publishingServerId>central</publishingServerId>
+                </configuration>
             </plugin>
         </plugins>
     </build>
